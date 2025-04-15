@@ -110,3 +110,44 @@
     color: #0c5460;
   }
   
+
+/* NAVIGATION  */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: var(--space-3) var(--space-4);
+    background-color: white;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .navbar-brand {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-left: var(--space-4);
+  }
+  .nav-link {
+    color: var(--color-gray-700);
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: var(--color-primary);
+  }
+  
+  .nav-link.active {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+  }
+    
