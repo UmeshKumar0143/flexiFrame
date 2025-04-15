@@ -234,19 +234,19 @@ img {
 
 /* Font Sizes */
 .text-sm {
-  font-size: var(--font-size-sm); /* 14px from base.css */
+  font-size: var(--font-size-sm); 
 }
 
 .text-base {
-  font-size: var(--font-size-base); /* 16px */
+  font-size: var(--font-size-base); 
 }
 
 .text-lg {
-  font-size: var(--font-size-lg); /* 20px */
+  font-size: var(--font-size-lg); 
 }
 
 .text-xl {
-  font-size: var(--font-size-xl); /* 24px */
+  font-size: var(--font-size-xl); 
 }
 
 /* Font Weights */
@@ -260,19 +260,19 @@ img {
 
 /* Text Colors */
 .text-primary {
-  color: var(--primary); /* #2563eb */
+  color: var(--primary);
 }
 
 .text-secondary {
-  color: var(--secondary); /* #9333ea */
+  color: var(--secondary); 
 }
 
 .text-gray {
-  color: var(--gray-900); /* #1a202c */
+  color: var(--gray-900);
 }
 
 .text-white {
-  color: var(--white); /* #ffffff */
+  color: var(--white); 
 }
 
 
