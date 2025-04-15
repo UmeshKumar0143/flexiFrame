@@ -11,3 +11,45 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+
+
+/* ======== FORMS ======== */
+.form-group {
+    margin-bottom: var(--space-4);
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: var(--space-2);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: white;
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-md);
+  }
+  
+  .form-control:focus {
+    border-color: var(--color-primary);
+    outline: none;
+  }
+  
+/* Simple validation styles */
+.form-control.is-invalid {
+    border-color: var(--color-danger);
+  }
+  
+  .form-text {
+    margin-top: var(--space-1);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+  }
+  
+    
