@@ -151,3 +151,19 @@
     font-weight: var(--font-weight-semibold);
   }
     
+
+  /* BADGES  */
+.badge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--radius-full);
+    color: white;
+  }
+  
+  .badge-primary { background-color: var(--color-primary); }
+  .badge-secondary { background-color: var(--color-secondary); }
+  .badge-success { background-color: var(--color-success); }
+  .badge-danger { background-color: var(--color-danger); }
+  
