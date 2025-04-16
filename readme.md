@@ -4,6 +4,16 @@
 **Project Name**: flexiFrame  
 **Event**: BuildForGehu'25  
 **Contact**: ypandey700@gmail.com
+Expand
+message.txt
+5 KB
+﻿
+# 🌟 flexiFrame – A Custom UI Library for BuildForGehu'25
+
+**Team Name**: HelloWorld!  
+**Project Name**: flexiFrame  
+**Event**: BuildForGehu'25  
+**Contact**: ypandey700@gmail.com
 
 ---
 
@@ -23,6 +33,7 @@
 | **Priyanshu Birkhani** | UI Components & Documentation Lead |
 
 ---
+
 
 ## ⚠️ Limitations of Popular Frameworks
 
@@ -96,6 +107,22 @@
 - 🧩 **Utility + Component Driven Design**
 
 ---
+## 📸 Project Snapshots
+
+Here are a few glimpses of **flexiFrame** in action:
+
+### 📘 Documentation UI
+![Docs UI](./Images/docs-ui.png)
+
+### 🧱 Component: Buttons & Inputs
+![Component UI](./Images/component-ui-1.png)
+
+### 🌙 Dark Mode Preview
+![Dark Mode](./Images/component-dark-mode.png)
+
+### 📱 Responsive Layout Demo
+![Responsive Layout](./Images/responsive-layout.png)
+
 
 ---
 
@@ -116,7 +143,4 @@
 
 ---
 
-🧠 **Need Help or Want to Contribute?**  
-Feel free to reach out or fork the repo and make your mark!
 
----
