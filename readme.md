@@ -73,9 +73,7 @@
 
 2. **Import the CSS**
    ```html
-   <link rel="stylesheet" href="path/to/flexiFrame/component.css" />
-   <link rel="stylesheet" href="path/to/flexiFrame/grid.css" />
-   <link rel="stylesheet" href="path/to/flexiFrame/utility.css" />
+    <link rel="stylesheet" href="/flexiframe/flexiframe.css">
    ```
 
 3. **Use Components**
