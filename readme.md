@@ -55,7 +55,7 @@ message.txt
 - ⚖️ **Balanced Abstraction**: Utility-first + component-driven.
 - 🧠 **Beginner-Friendly** syntax & reusable patterns.
 - 💻 **Clean HTML** with shortcut tools.
-- ♿ **Accessibility First**: ARIA & best practices integrated.
+
 
 ---
 
