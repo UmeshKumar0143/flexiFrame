@@ -101,9 +101,8 @@
 
 /* Card*/
 .card {
-  border: 1px solid var(--color-gray-200);
+  border: 2px solid var(--color-gray-300);
   border-radius: var(--radius-md);
-  background-color: white;
   box-shadow: var(--shadow-sm);
 }
 
@@ -161,7 +160,6 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--space-3) var(--space-4);
-  background-color: white;
   box-shadow: var(--shadow-sm);
   border-bottom: gray solid 0.5px;
 }
@@ -256,7 +254,7 @@
 
 /* Images */
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }

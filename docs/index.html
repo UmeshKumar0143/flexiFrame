@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiFrame UI Library Documentation</title>
+  <link rel="stylesheet" href="/flexiframe/flexiframe.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-gray-100);
+    }
+    .docs-header {
+      background-color: #fff;
+      padding: var(--space-4);
+      box-shadow: var(--shadow-sm);
+      border-bottom: 1px solid var(--color-gray-600);
+    }
+    .docs-main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: var(--space-5);
+    }
+    .docs-section {
+      margin-bottom: var(--space-5);
+    }
+    .docs-section h2 {
+      font-size: var(--font-size-2xl);
+      margin-bottom: var(--space-3);
+    }
+    .docs-section h3 {
+      font-size: var(--font-size-xl);
+      margin-top: var(--space-4);
+      margin-bottom: var(--space-2);
+    }
+    .docs-section p {
+      margin-bottom: var(--space-3);
+      color: var(--color-gray-600);
+    }
+    pre {
+      background-color: #414346;
+      padding: var(--space-3);
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      font-size: var(--font-size-sm);
+      margin-bottom: var(--space-3);
+      color: white;
+    }
+    code {
+      font-family: monospace;
+    }
+    .example {
+      border: 1px solid var(--color-gray-200);
+      padding: var(--space-3);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-3);
+      background-color: #fff;
+    }
+    .docs-footer {
+      text-align: center;
+      padding: var(--space-4);
+      background-color: #fff;
+      border-top: 1px solid var(--color-gray-600);
+    }
+  </style>
+</head>
+<body>
+  <header class="docs-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <h1 class="text-3xl font-bold">FlexiFrame Docs</h1>
+        </div>
+        <div class="col-6 col-md-9 d-flex justify-end align-center">
+          <a href="/demo/index.html" class="nav-link mx-2">Live Demo</a>
+          <a href="https://github.com/UmeshKumar0143/flexiFrame" class="nav-link mx-2">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="docs-main">
+    <section class="docs-section">
+      <h2>FlexiFrame UI Library</h2>
+      <p>FlexiFrame is a lightweight, responsive UI library built for the BuildForGehu'25 hackathon. It provides a 12-column grid system, reusable components, utility classes, and theming variables—all under 15KB. Use FlexiFrame to create modern, Layouts with ease.</p>
+    </section>
+
+    <section class="docs-section">
+      <h2>Installation</h2>
+      <p>Add FlexiFrame to your project by including the CSS file:</p>
+      <pre><code>&lt;link rel="stylesheet" href="https://github.com/UmeshKumar0143/flexiFrame"&gt;</code></pre>
+      <p>Alternatively, download the library from GitHub and include it locally:</p>
+      <pre><code>&lt;link rel="stylesheet" href="/path/to/flexiframe.css"&gt;</code></pre>
+    </section>
+
+    <section class="docs-section">
+      <h2>Grid System</h2>
+      <p>FlexiFrame includes a responsive 12-column grid system for layout control. Use the <code>.row</code> and <code>.col-*</code> classes to define layouts, with responsive variants for small, medium, large, and extra-large screens.</p>
+      
+      <h3>Basic Grid</h3>
+      <p>Create a grid with columns of different widths:</p>
+      <pre><code>&lt;div class="row "&gt;
+  &lt;div class="col-12 col-md-6 col-lg-4"&gt;Column 1&lt;/div&gt;
+  &lt;div class="col-6 col-md-6 col-lg-4"&gt;Column 2&lt;/div&gt;
+  &lt;div class="col-4 col-md-6 col-lg-4"&gt;Column 3&lt;/div&gt;
+  &lt;div class="col-2 col-md-6 col-lg-4"&gt;Column 4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      
+      <div class="example">
+        <div class="row  ">
+          <div class="col-12 col-md-6 col-lg-4  border border-2 p-2">Column 1</div>
+          <div class="col-6 col-md-6 col-lg-4  border border-2 p-2">Column 2</div>
+          <div class="col-4 col-md-6 col-lg-4  border border-2 p-2">Column 3</div>
+          <div class="col-2 col-md-6 col-lg-4  border border-2 p-2">Column 4</div>
+        </div>
+      </div>
+
+      <h3>Grid with Offset</h3>
+      <p>Use offset classes to create space between columns:</p>
+      <pre><code>&lt;div class="row"&gt;
+  &lt;div class="col-6"&gt;Column 1&lt;/div&gt;
+  &lt;div class="col-4 offset-2"&gt;Column 2 (with offset)&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      
+      <div class="example">
+        <div class="row">
+          <div class="col-6  border border-2 p-2">Column 1</div>
+          <div class="col-4 offset-2  border border-2 p-2">Column 2 (with offset)</div>
+        </div>
+      </div>
+
+      <h3>Responsive Breakpoints</h3>
+      <p>Use breakpoint prefixes to adjust layouts for different screen sizes:</p>
+      <ul>
+        <li><code>sm:</code> ≥576px</li>
+        <li><code>md:</code> ≥768px</li>
+        <li><code>lg:</code> ≥992px</li>
+        <li><code>xl:</code> ≥1200px</li>
+      </ul>
+
+      <h3>Auto-layout Columns</h3>
+      <p>Use <code>.col</code> for equal-width columns that automatically size themselves:</p>
+      <pre><code>&lt;div class="row"&gt;
+  &lt;div class="col"&gt;Auto Column 1&lt;/div&gt;
+  &lt;div class="col"&gt;Auto Column 2&lt;/div&gt;
+  &lt;div class="col"&gt;Auto Column 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      
+      <div class="example">
+        <div class="row">
+          <div class="col  border border-2 p-2">Auto Column 1</div>
+          <div class="col  border border-2 p-2">Auto Column 2</div>
+          <div class="col  border border-2 p-2">Auto Column 3</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="docs-section">
+      <h2>Masonry Grid</h2>
+      <p>Create Pinterest-style layouts with the masonry grid system:</p>
+      <pre><code>&lt;div class="masonry-grid"&gt;
+  &lt;div class="masonry-item"&gt;Item 1&lt;/div&gt;
+  &lt;div class="masonry-item"&gt;Item 2&lt;/div&gt;
+  &lt;div class="masonry-item"&gt;Item 3&lt;/div&gt;
+  &lt;div class="masonry-item"&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      
+      <div class="example">
+        <div class="masonry-grid">
+          <div class="masonry-item  border border-2 p-2">
+            <p>Item with short content</p>
+          </div>
+          <div class="masonry-item  border border-2 p-2">
+            <p>Item with longer content that spans multiple lines to demonstrate the masonry layout's handling of different content heights.</p>
+          </div>
+          <div class="masonry-item  border border-2 p-2">
+            <p>Item 3 with medium content length.</p>
+          </div>
+          <div class="masonry-item  border border-2 p-2">
+            <p>Item 4 with some content.</p>
+          </div>
+          <div class="masonry-item  border border-2 p-2">
+            <p>Item 5 with really long content to demonstrate how masonry layouts handle varying heights. This content should be long enough to show how the items flow into columns.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="docs-section">
+      <h2>Responsive Utilities</h2>
+      <p>Control visibility based on screen size:</p>
+      <pre><code>&lt;div class="d-none d-md-block"&gt;Hidden on small screens, visible on medium and up&lt;/div&gt;
+&lt;div class="d-block d-md-none"&gt;Visible on small screens, hidden on medium and up&lt;/div&gt;</code></pre>
+      
+      <div class="example">
+        <div class="d-none d-md-block  border border-2 p-2">Hidden on small screens, visible on medium and up</div>
+        <div class="d-block d-md-none  border border-2 p-2">Visible on small screens, hidden on medium and up</div>
+      </div>
+    </section>
+
+    <section class="docs-section">
+      <h2>Gap Utilities</h2>
+      <p>Control spacing between grid items:</p>
+      <pre><code>&lt;div class="row gap-4"&gt;
+  &lt;div class="col-4"&gt;Column with gap&lt;/div&gt;
+  &lt;div class="col-4"&gt;Column with gap&lt;/div&gt;
+  &lt;div class="col-4"&gt;Column with gap&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      
+      <div class="example">
+        <div class="row gap-4">
+          <div class="col-4  border border-2 p-2">Column with gap</div>
+          <div class="col-4  border border-2 p-2">Column with gap</div>
+          <div class="col-4  border border-2 p-2">Column with gap</div>
+        </div>
+      </div>
+
+      <h3>Horizontal and Vertical Gaps</h3>
+      <p>Control horizontal (column) and vertical (row) spacing independently:</p>
+      <pre><code>&lt;div class="row gap-x-4 gap-y-2"&gt;
+  &lt;div class="col-6"&gt;Column with specific gaps&lt;/div&gt;
+  &lt;div class="col-6"&gt;Column with specific gaps&lt;/div&gt;
+  &lt;div class="col-6"&gt;Column with specific gaps&lt;/div&gt;
+  &lt;div class="col-6"&gt;Column with specific gaps&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      
+      <div class="example">
+        <div class="row gap-x-4 gap-y-2">
+          <div class="col-6  border border-2 p-2">Column with specific gaps</div>
+          <div class="col-6  border border-2 p-2">Column with specific gaps</div>
+          <div class="col-6  border border-2 p-2">Column with specific gaps</div>
+          <div class="col-6  border border-2 p-2">Column with specific gaps</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="docs-section">
+      <h2>Components</h2>
+      <p>FlexiFrame provides reusable components for building modern UIs.</p>
+
+      <h3>Buttons</h3>
+      <p>Use <code>.btn</code> for basic buttons, with variants like <code>.btn-primary</code> and <code>.btn-sm</code>.</p>
+      <pre>
+      <code>&lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+      &lt;button class="btnf"&gt;Button&lt;/button&gt;</code>
+      <code>&lt;button class="btn-success"&gt;Success Button&lt;/button&gt;
+      <code>&lt;button class="btn-danger"&gt; Button&lt;/button&gt;
+</pre>
+      <div class="example">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-sm">Button</button>
+        <button class="btn-success">Success Button</button>
+        <button class="btn-danger">Button</button>
+      </div>
+
+      <h3>Cards</h3>
+      <p>Use <code>.card</code> for content containers, with <code>.card-body</code> for padding.</p>
+      <pre><code>&lt;div class="card"&gt;
+  &lt;img class="img-fluid" src="/path/to/image.jpg" alt="Example"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h3&gt;Card Title&lt;/h3&gt;
+    &lt;p&gt;Card content here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <div class="example">
+        <div class="card">
+          <div class="card-body">
+            <h3>Card Title</h3>
+            <p>Card content here without image.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="docs-section">
+      <h2>Utilities</h2>
+      <p>FlexiFrame includes utility classes for layout, spacing, and typography.</p>
+
+      <h3>Flexbox</h3>
+      <p>Use <code>.d-flex</code>, <code>.justify-center</code>, and <code>.align-center</code> for flexible layouts.</p>
+      <pre><code>&lt;div class="d-flex justify-center align-center"&gt;
+  &lt;p&gt;Centered Content&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      <div class="example">
+        <div class="d-flex justify-center align-center  border border-2 p-4">
+          <p>Centered Content</p>
+        </div>
+      </div>
+
+      <h3>Spacing</h3>
+      <p>Use <code>.m-*</code> and <code>.p-*</code> classes for margins and padding.</p>
+      <pre><code>&lt;div class="mb-3 py-4 px-2"&gt;Element with margin-bottom and vertical padding&lt;/div&gt;</code></pre>
+      <div class="example">
+        <div class="mb-3 py-4 px-2  border border-2">Element with margin-bottom and vertical padding</div>
+      </div>
+    </section>
+
+    <section class="docs-section">
+      <h2>Theming</h2>
+      <p>Customize FlexiFrame using CSS variables defined in <code>base.css</code>.</p>
+      <h3>Variables</h3>
+      <p>Override variables in your CSS to customize the look:</p>
+      <pre><code>&lt;style&gt;
+  :root {
+    --color-primary: #ff0000; /* Change primary color to red */
+    --space-4: 1.25rem; /* Adjust spacing */
+    --radius-md: 0.5rem; /* Change border radius */
+  }
+&lt;/style&gt;</code></pre>
+    </section>
+  </main>
+
+  <footer class="docs-footer">
+    <p class="text-gray-600 text-sm">© 2025 FlexiFrame Library. Built by Hello World  for BuildForGehu'25.</p>
+  </footer>
+</body>
+</html>

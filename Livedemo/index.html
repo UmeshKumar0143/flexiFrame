@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Site </title>
-    <link rel="stylesheet" href="/css/flexiframe.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Library Demo - Pinterest Style Grid</title>
+  <link rel="stylesheet" href="../flexiframe/flexiframe.css">
 </head>
-<body>
-    <button class="rounded-xl border-1 p-3 p-2 text-white btn-danger font-bold   m-6">Click me !! </button>
+<body class="">
+  <nav class="navbar ">
+          <a href="#" class="navbar-brand">PinUI</a>
+        <div class="gap-3">
+        <button onclick="ToogleDarkMode()" class="p-2 rounded-full text-sm border-0 font-medium">DarkMode</button>
+        <button class="btn-primary">Log In</button>
+        <button class="btn-primary">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 border-b ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center text-3xl mb-2">UI Library Demo</h1>
+          <p class="text-center text-gray-600 mb-4">Responsive  grid layout showcasing our UI components</p>
+        </div>
+      </div>
+          <div class="mb-4">
+            <div class="d-flex justify-evenly">
+              <div class=" ">
+                <button class="btn btn-primary ">All</button>
+              </div>
+              <div class=" ">
+                <button class="btn ">Design</button>
+              </div>
+              <div class=" ">
+                <button class="btn ">Technology</button>
+              </div>
+              <div class=" ">
+                <button class="btn ">Nature</button>
+              </div>
+            </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="masonry-grid">
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/02/25/16/36/bird-9431014_640.jpg" alt="Design inspiration" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">Modern UI Design</h3>
+              <p class="text-gray-600 text-sm mb-3">Clean and minimalist design patterns for modern web applications.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">2.3k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/03/18/17/03/dog-9478487_1280.jpg" alt="Mobile design" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">Mobile First Approach</h3>
+              <p class="text-gray-600 text-sm mb-3">Designing with mobile devices as the primary focus.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">1.8k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2022/08/02/04/11/city-7359472_640.jpg"  alt="Code example" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">CSS Grid Techniques</h3>
+              <p class="text-gray-600 text-sm mb-3">Advanced CSS grid layouts for responsive websites.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">3.4k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2020/08/24/21/44/man-5515150_640.jpg" alt="Nature scene" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">Mountain Landscapes</h3>
+              <p class="text-gray-600 text-sm mb-3">Beautiful mountain scenery for design inspiration.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">5.2k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2024/11/25/10/38/mountains-9223041_640.jpg" alt="Technology concept" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">AI in Design</h3>
+              <p class="text-gray-600 text-sm mb-3">How artificial intelligence is changing the design industry.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">1.5k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/03/31/08/17/penguin-9504250_640.jpg" alt="Design pattern" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">Color Theory</h3>
+              <p class="text-gray-600 text-sm mb-3">Understanding color relationships and palettes for effective design.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">4.1k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2023/01/10/00/17/italy-7708551_640.jpg" alt="UI component" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">Button Designs</h3>
+              <p class="text-gray-600 text-sm mb-3">Creative and effective button styles for better user engagement.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">2.7k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/12/04/20/59/animal-6845972_640.jpg" alt="Nature photography" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">Forest Textures</h3>
+              <p class="text-gray-600 text-sm mb-3">Natural patterns and textures from forest environments.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">3.9k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/01/27/19/49/grasshopper-9363974_640.jpg" alt="Code example" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">JavaScript Frameworks</h3>
+              <p class="text-gray-600 text-sm mb-3">Comparison of popular JavaScript frameworks for front-end development.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">6.8k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="masonry-item">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2023/12/29/18/23/daisy-8476666_640.jpg" alt="Design inspiration" class="w-full">
+            <div class="card-body">
+              <h3 class="font-bold mb-2">Typography Trends</h3>
+              <p class="text-gray-600 text-sm mb-3">Current typography trends in web and print design.</p>
+              <div class="d-flex justify-between align-center">
+                <button class="btn btn-sm">Save</button>
+                <div class="text-gray-400 text-sm">2.2k saves</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4  border-t">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-gray-600 text-sm">© 2025 PinUI Library. All rights reserved.</p>
+          <div class="mt-2">
+            <a href="#" class="text-gray-600 text-sm mr-3">Terms</a>
+            <a href="#" class="text-gray-600 text-sm mr-3">Privacy</a>
+            <a href="#" class="text-gray-600 text-sm">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const ToogleDarkMode = () => {
+        const html = document.documentElement; 
+        html.classList.toggle("dark"); 
+    }
+  </script>
 </body>
 </html>

@@ -136,6 +136,13 @@
   --breakpoint-xl: 1200px;
 }
 
+.dark {
+  --color-background: #000000;
+  --color-text: #ffffff;
+  --color-heading: #f0f0f0;
+  --color-border: #2d3748;
+}
+
 /* Base HTML elements */
 html {
   font-size: 16px;
@@ -351,8 +358,9 @@ img {
 
 /* Border  */
 
-.border { border: 1px solid var(--color-border); }
-.border-0 { border: 0; }
+.border { border-style: solid; border-color: var(--color-border); }
+.border-0 { border-width: 0; }
+.border-1 { border-width: 1px; }
 .border-2 { border-width: 2px; }
 .border-4 { border-width: 4px; }
 .border-8 { border-width: 8px; }
