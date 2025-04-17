@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlexiFrame UI Library Documentation</title>
-  <link rel="stylesheet" href="/flexiframe/flexiframe.css">
+  <link rel="stylesheet" href="/flexiFrame/flexiframe/flexiframe.css">
   <style>
     body {
       margin: 0;
@@ -332,7 +332,7 @@
 
       <h3>Implementation</h3>
       <p>Add a button to toggle dark mode and a script to handle the class toggle:</p>
-      <pre><code>&lt;button onclick="ToogleDarkMode()" class="btn btn-primary"&gt;Toggle Dark Mode&lt;/button&gt;
+      <pre><code>&lt;button id="dark-mode-btn" onclick="ToogleDarkMode()" class="btn btn-primary"&gt;Toggle Dark Mode&lt;/button&gt;
 
 &lt;script&gt;
   const ToogleDarkMode = () => {
@@ -351,7 +351,7 @@
       <h3>Live Example</h3>
       <div class="example">
         <div class="d-flex justify-center align-center">
-          <button onclick="ToogleDarkMode()" class="btn btn-primary">Toggle Dark Mode</button>
+          <button id="dark-mode-btn" onclick="ToogleDarkMode()" class="btn btn-primary">DarkMode</button>
         </div>
         <p class="mt-3 text-center">Click the button to toggle dark mode. This changes the background, text, and other
           colors across the page.</p>
@@ -365,9 +365,15 @@
   </footer>
   <script>
     const ToogleDarkMode = () => {
-        const html = document.documentElement; 
-        html.classList.toggle("dark"); 
-    }
+      const html = document.documentElement; 
+      html.classList.toggle("dark");
+      const darkmodeButton =  document.getElementById("dark-mode-btn");
+      if(darkmodeButton.innerHTML=="DarkMode"){
+        darkmodeButton.innerHTML = "LightMode";
+      }else{
+        darkmodeButton.innerHTML = "DarkMode";
+      }
+  }
   </script>
 </body>
 
