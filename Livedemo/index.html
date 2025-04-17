@@ -10,7 +10,7 @@
   <nav class="navbar ">
           <a href="#" class="navbar-brand">PinUI</a>
         <div class="gap-3">
-        <button onclick="ToogleDarkMode()" class="p-2 rounded-full text-sm border-0 font-medium">DarkMode</button>
+        <button id="dark-mode-btn" onclick="ToogleDarkMode()" class="p-2 rounded-full text-sm border-0 font-medium">DarkMode</button>
         <button class="btn-primary">Log In</button>
         <button class="btn-primary">Sign Up</button>
         </div>
@@ -208,7 +208,13 @@
   <script>
     const ToogleDarkMode = () => {
         const html = document.documentElement; 
-        html.classList.toggle("dark"); 
+        html.classList.toggle("dark");
+        const darkmodeButton =  document.getElementById("dark-mode-btn");
+        if(darkmodeButton.innerHTML=="DarkMode"){
+          darkmodeButton.innerHTML = "LightMode";
+        }else{
+          darkmodeButton.innerHTML = "DarkMode";
+        }
     }
   </script>
 </body>
