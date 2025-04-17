@@ -4,9 +4,7 @@
 **Project Name**: flexiFrame  
 **Event**: BuildForGehu'25  
 **Contact**: ypandey700@gmail.com
-Expand
-message.txt
-5 KB
+
 ﻿
 # 🌟 flexiFrame – A Custom UI Library for BuildForGehu'25
 
