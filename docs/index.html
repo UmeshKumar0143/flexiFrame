@@ -5,71 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlexiFrame UI Library Documentation</title>
-  <link rel="stylesheet" href="/flexiFrame/flexiframe/flexiframe.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    .docs-header {
-      padding: var(--space-4);
-      box-shadow: var(--shadow-sm);
-      border-bottom: 1px solid var(--color-gray-600);
-    }
-
-    .docs-main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: var(--space-5);
-    }
-
-    .docs-section {
-      margin-bottom: var(--space-5);
-    }
-
-    .docs-section h2 {
-      font-size: var(--font-size-2xl);
-      margin-bottom: var(--space-3);
-    }
-
-    .docs-section h3 {
-      font-size: var(--font-size-xl);
-      margin-top: var(--space-4);
-      margin-bottom: var(--space-2);
-    }
-
-    .docs-section p {
-      margin-bottom: var(--space-3);
-    }
-
-    pre {
-      background-color: #414346;
-      padding: var(--space-3);
-      border-radius: var(--radius-md);
-      overflow-x: auto;
-      font-size: var(--font-size-sm);
-      margin-bottom: var(--space-3);
-      color: white;
-    }
-
-    code {
-      font-family: monospace;
-    }
-
-    .example {
-      border: 1px solid var(--color-gray-200);
-      padding: var(--space-3);
-      border-radius: var(--radius-md);
-      margin-bottom: var(--space-3);
-    }
-
-    .docs-footer {
-      text-align: center;
-      padding: var(--space-4);
-      border-top: 1px solid var(--color-gray-600);
-    }
-  </style>
+  <link rel="stylesheet" href="/flexiframe/flexiframe.css">
 </head>
 
 <body>
@@ -121,9 +57,9 @@
       <div class="example">
         <div class="row  ">
           <div class="col-12 col-md-6   border border-2 p-2">Column 1</div>
-          <div class="col-6 col-md-6    border border-2 p-2">Column 2</div>
-          <div class="col-4 col-md-6    border border-2 p-2">Column 3</div>
-          <div class="col-2 col-md-6    border border-2 p-2">Column 4</div>
+          <div class="col-4  col-md-6    border border-2 p-2">Column 2</div>
+          <div class="col-4  col-md-6    border border-2 p-2">Column 3</div>
+          <div class="col-4  col-md-6    border border-2 p-2">Column 4</div>
         </div>
       </div>
 
@@ -332,7 +268,7 @@
 
       <h3>Implementation</h3>
       <p>Add a button to toggle dark mode and a script to handle the class toggle:</p>
-      <pre><code>&lt;button id="dark-mode-btn" onclick="ToogleDarkMode()" class="btn btn-primary"&gt;Toggle Dark Mode&lt;/button&gt;
+      <pre><code>&lt;button onclick="ToogleDarkMode()" class="btn btn-primary"&gt;Toggle Dark Mode&lt;/button&gt;
 
 &lt;script&gt;
   const ToogleDarkMode = () => {
@@ -351,7 +287,7 @@
       <h3>Live Example</h3>
       <div class="example">
         <div class="d-flex justify-center align-center">
-          <button id="dark-mode-btn" onclick="ToogleDarkMode()" class="btn btn-primary">DarkMode</button>
+          <button onclick="ToogleDarkMode()" class="btn btn-primary">Toggle Dark Mode</button>
         </div>
         <p class="mt-3 text-center">Click the button to toggle dark mode. This changes the background, text, and other
           colors across the page.</p>
@@ -365,14 +301,9 @@
   </footer>
   <script>
     const ToogleDarkMode = () => {
-      const html = document.documentElement; 
-      html.classList.toggle("dark");
-      const darkmodeButton =  document.getElementById("dark-mode-btn");
-      if(darkmodeButton.innerHTML=="DarkMode"){
-      }else{
-        darkmodeButton.innerHTML = "DarkMode";
-      }
-  }
+        const html = document.documentElement; 
+        html.classList.toggle("dark"); 
+    }
   </script>
 </body>
 

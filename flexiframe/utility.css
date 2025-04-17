@@ -1,6 +1,6 @@
 @import "base.css";
 
-/*Spacing Utilities------>*/
+/*Spacing Utilities*/
 
 /* Margin Utilities (all sides) */
 .m-0 { margin: var(--space-0); }
